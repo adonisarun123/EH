@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Helper Onboarding Process - EzyHelpers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4a86e8;
+            --secondary-color: #6aa84f;
+            --accent-color: #e69138;
+            --light-color: #f3f3f3;
+            --dark-color: #333333;
+            --border-color: #cccccc;
+            --success-color: #6aa84f;
+            --warning-color: #e69138;
+            --error-color: #cc0000;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: var(--light-color);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .process-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .step {
+            background-color: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            position: relative;
+        }
+        
+        .step-number {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .step-title {
+            font-weight: bold;
+            font-size: 18px;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            padding-left: 40px;
+        }
+        
+        .step-details {
+            font-size: 14px;
+            color: var(--dark-color);
+        }
+        
+        .step-details ul {
+            list-style-type: none;
+            margin-left: 20px;
+        }
+        
+        .step-details li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .step-details li:before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .icon {
+            margin-right: 10px;
+        }
+        
+        .note {
+            background-color: #fff8e1;
+            border-left: 4px solid var(--warning-color);
+            padding: 15px;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        
+        .cta-section {
+            text-align: center;
+            margin-top: 30px;
+            padding: 30px;
+            background-color: var(--primary-color);
+            border-radius: 8px;
+            color: white;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: white;
+            color: var(--primary-color);
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Helper Onboarding Process</h1>
+            <p>EzyHelpers - Streamlined Onboarding Workflow</p>
+        </header>
+        
+        <div class="process-steps">
+            <!-- Step 1 -->
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-title">
+                    <i class="fas fa-phone icon"></i>Initial Contact
+                </div>
+                <div class="step-details">
+                    <ul>
+                        <li>Receive lead/reference of helper</li>
+                        <li>Call helper to introduce EzyHelpers</li>
+                        <li>Explain the onboarding process</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-title">
+                    <i class="fas fa-user-edit icon"></i>Collect Personal Details
+                </div>
+                <div class="step-details">
+                    <ul>
+                        <li>Full Name</li>
+                        <li>Gender</li>
+                        <li>Age</li>
+                        <li>Phone Number</li>
+                        <li>Address</li>
+                        <li>Native Place</li>
+                        <li>Languages Known</li>
+                        <li>Experience (Type, Years, Salary)</li>
+                        <li>Preferred Job Type & Location</li>
+                        <li>Expected Salary</li>
+                        <li>Any other details</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-title">
+                    <i class="fab fa-whatsapp icon"></i>Document Collection
+                </div>
+                <div class="step-details">
+                    <ul>
+                        <li>Request Aadhar (front & back) via WhatsApp</li>
+                        <li>Request recent photo (passport-size/selfie)</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Step 4 -->
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-title">
+                    <i class="fas fa-id-card icon"></i>Aadhar Verification
+                </div>
+                <div class="step-details">
+                    <ul>
+                        <li>Check document clarity and legibility</li>
+                        <li>Verify name matches with provided details</li>
+                        <li>Confirm Aadhar number format (12 digits)</li>
+                        <li>Validate document authenticity</li>
+                        <li>Check for any signs of tampering</li>
+                        <li>Ensure both front and back are provided</li>
+                    </ul>
+                    <div class="note">
+                        If Aadhar is invalid:
+                        <ul>
+                            <li>Inform helper about the issue</li>
+                            <li>Request new/clearer documents</li>
+                            <li>Provide specific feedback</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Step 5 -->
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-title">
+                    <i class="fas fa-database icon"></i>Profile Creation
+                </div>
+                <div class="step-details">
+                    <ul>
+                        <li>Input all collected data</li>
+                        <li>Upload photo & Aadhar documents</li>
+                        <li>Set status: Verified – Ready</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Step 6 -->
+            <div class="step">
+                <div class="step-number">6</div>
+                <div class="step-title">
+                    <i class="fas fa-bell icon"></i>Sales Team Notification
+                </div>
+                <div class="step-details">
+                    <ul>
+                        <li>Add to WhatsApp group/CRM update</li>
+                        <li>Wait for matching with customer leads</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="cta-section">
+                <h2>Ready to Place the Helper?</h2>
+                <p>Once all steps are completed and verified, proceed with placing the helper in a suitable position.</p>
+                <a href="#" class="cta-button">
+                    <i class="fas fa-user-check icon"></i>Place Helper
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
