@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Onboarding Process - EzyHelpers</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        :root {
+            --primary-color: #4a86e8;
+            --secondary-color: #6aa84f;
+            --accent-color: #e69138;
+            --light-color: #f3f3f3;
+            --dark-color: #333333;
+            --border-color: #cccccc;
+            --success-color: #6aa84f;
+            --warning-color: #e69138;
+            --error-color: #cc0000;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Arial', sans-serif;
+            line-height: 1.6;
+            color: var(--dark-color);
+            background-color: var(--light-color);
+            padding: 20px;
+        }
+        
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0,0,0,0.1);
+        }
+        
+        header {
+            text-align: center;
+            margin-bottom: 30px;
+            padding-bottom: 20px;
+            border-bottom: 2px solid var(--primary-color);
+        }
+        
+        h1 {
+            color: var(--primary-color);
+            margin-bottom: 10px;
+        }
+        
+        .process-steps {
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+        
+        .step {
+            background-color: white;
+            border: 1px solid var(--border-color);
+            border-radius: 8px;
+            padding: 20px;
+            position: relative;
+        }
+        
+        .step-number {
+            position: absolute;
+            top: -15px;
+            left: 20px;
+            background-color: var(--primary-color);
+            color: white;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+        }
+        
+        .step-title {
+            font-weight: bold;
+            font-size: 18px;
+            color: var(--primary-color);
+            margin-bottom: 15px;
+            padding-left: 40px;
+        }
+        
+        .step-details {
+            font-size: 14px;
+            color: var(--dark-color);
+        }
+        
+        .step-details ul {
+            list-style-type: none;
+            margin-left: 20px;
+        }
+        
+        .step-details li {
+            margin-bottom: 8px;
+            position: relative;
+            padding-left: 20px;
+        }
+        
+        .step-details li:before {
+            content: "•";
+            color: var(--primary-color);
+            font-weight: bold;
+            position: absolute;
+            left: 0;
+        }
+        
+        .icon {
+            margin-right: 10px;
+        }
+        
+        .note {
+            background-color: #fff8e1;
+            border-left: 4px solid var(--warning-color);
+            padding: 15px;
+            margin-top: 15px;
+            font-size: 14px;
+        }
+        
+        .cta-section {
+            text-align: center;
+            margin-top: 30px;
+            padding: 30px;
+            background-color: var(--primary-color);
+            border-radius: 8px;
+            color: white;
+        }
+        
+        .cta-button {
+            display: inline-block;
+            background-color: white;
+            color: var(--primary-color);
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+        }
+        
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Customer Onboarding Process</h1>
+            <p>EzyHelpers - Streamlined Customer Onboarding</p>
+        </header>
+        
+        <div class="process-steps">
+            <!-- Step 1 -->
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-title">
+                    <i class="fas fa-user-plus icon"></i>Lead Entry
+                </div>
+                <div class="step-details">
+                    <ul>
+                        <li>Add lead to CRM/Customer Tracker</li>
+                        <li>Record name and contact information</li>
+                        <li>Note source of lead</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Step 2 -->
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-title">
+                    <i class="fas fa-phone icon"></i>Initial Contact
+                </div>
+                <div class="step-details">
+                    <ul>
+                        <li>Call customer to introduce EzyHelpers</li>
+                        <li>Explain our services and process</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Step 3 -->
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-title">
+                    <i class="fas fa-clipboard-list icon"></i>Requirements Gathering
+                </div>
+                <div class="step-details">
+                    <ul>
+                        <li>Type of help needed (Maid/Nanny/etc.)</li>
+                        <li>Working hours and days</li>
+                        <li>Gender and age preference</li>
+                        <li>Specific work requirements</li>
+                        <li>Salary range expectations</li>
+                        <li>Preferred location</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Step 4 -->
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-title">
+                    <i class="fas fa-rupee-sign icon"></i>Pricing & Terms
+                </div>
+                <div class="step-details">
+                    <ul>
+                        <li>₹1999 Registration Fee (non-refundable)</li>
+                        <li>Service Fee details (upon placement)</li>
+                        <li>Replacement policy explanation</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Step 5 -->
+            <div class="step">
+                <div class="step-number">5</div>
+                <div class="step-title">
+                    <i class="fas fa-credit-card icon"></i>Payment Collection
+                </div>
+                <div class="step-details">
+                    <ul>
+                        <li>Send payment link to customer</li>
+                        <li>Wait for payment confirmation</li>
+                        <li>Update status to 'Registered – Active'</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Step 6 -->
+            <div class="step">
+                <div class="step-number">6</div>
+                <div class="step-title">
+                    <i class="fas fa-users icon"></i>Profile Matching
+                </div>
+                <div class="step-details">
+                    <ul>
+                        <li>Share 2-3 suitable helper profiles</li>
+                        <li>Include photos and experience details</li>
+                        <li>Provide location information</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Step 7 -->
+            <div class="step">
+                <div class="step-number">7</div>
+                <div class="step-title">
+                    <i class="fas fa-video icon"></i>Conference Call
+                </div>
+                <div class="step-details">
+                    <ul>
+                        <li>Arrange call with customer and helper</li>
+                        <li>Include sales executive for support</li>
+                        <li>Ensure mutual comfort and understanding</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Step 8 -->
+            <div class="step">
+                <div class="step-number">8</div>
+                <div class="step-title">
+                    <i class="fas fa-check-circle icon"></i>Customer Decision
+                </div>
+                <div class="step-details">
+                    <ul>
+                        <li>Confirm customer's satisfaction with helper</li>
+                        <li>If not satisfied, return to profile matching</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Step 9 -->
+            <div class="step">
+                <div class="step-number">9</div>
+                <div class="step-title">
+                    <i class="fas fa-handshake icon"></i>Placement Confirmation
+                </div>
+                <div class="step-details">
+                    <ul>
+                        <li>Update CRM status to 'Confirmed & Placed'</li>
+                        <li>Collect final Service Fee</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Step 10 -->
+            <div class="step">
+                <div class="step-number">10</div>
+                <div class="step-title">
+                    <i class="fas fa-exchange-alt icon"></i>Contact Handover
+                </div>
+                <div class="step-details">
+                    <ul>
+                        <li>Share contact information between parties</li>
+                        <li>Set clear expectations for both sides</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Step 11 -->
+            <div class="step">
+                <div class="step-number">11</div>
+                <div class="step-title">
+                    <i class="fas fa-phone-volume icon"></i>Follow-up
+                </div>
+                <div class="step-details">
+                    <ul>
+                        <li>Conduct 1-week check-in</li>
+                        <li>Address any concerns or issues</li>
+                        <li>Ensure smooth working relationship</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- CTA Section -->
+            <div class="cta-section">
+                <h2>Ready to Start the Process?</h2>
+                <p>Begin the customer onboarding journey with EzyHelpers.</p>
+                <a href="#" class="cta-button">
+                    <i class="fas fa-play-circle icon"></i>Start Process
+                </a>
+            </div>
+        </div>
+    </div>
+</body>
+</html> 
